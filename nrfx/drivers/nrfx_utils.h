@@ -353,7 +353,7 @@
  * @return Index of a bit.
  */
 #define NRFX_BITMASK_TO_BITPOS(_bitmask) \
-    _bitmask == NRFX_BIT(0) ? 0 : \
+    (_bitmask == NRFX_BIT(0) ? 0 : \
     _bitmask == NRFX_BIT(1) ? 1 : \
     _bitmask == NRFX_BIT(2) ? 2 : \
     _bitmask == NRFX_BIT(3) ? 3 : \
@@ -383,7 +383,7 @@
     _bitmask == NRFX_BIT(27) ? 27 : \
     _bitmask == NRFX_BIT(28) ? 28 : \
     _bitmask == NRFX_BIT(29) ? 29 : \
-    _bitmask == NRFX_BIT(30) ? 30 : 31
+    _bitmask == NRFX_BIT(30) ? 30 : 31)
 
 /** @} */
 
